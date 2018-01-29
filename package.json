@@ -1,0 +1,58 @@
+{
+  "name": "react-multipane",
+  "version": "0.0.0",
+  "description": "My striking React component.",
+  "repository": {
+    "url": "luyilin/react-multipane",
+    "type": "git"
+  },
+  "main": "dist/react-multipane.cjs.js",
+  "files": ["dist"],
+  "scripts": {
+    "prepublishOnly": "npm test && npm run build",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "test": "npm run lint && jest",
+    "build": "bili",
+    "example": "poi --jsx react",
+    "build:example": "poi build  --jsx react"
+  },
+  "author": {
+    "name": "luyilin",
+    "email": "luyilin12@gmail.com"
+  },
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "./"
+  },
+  "bili": {
+    "format": [
+      "cjs",
+      "umd"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "plugin:react/recommended"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "poi": "^9.3.10",
+    "bili": "^1.3.3",
+    "eslint": "^4.14.0",
+    "jest": "^22.1.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-eslint": "^8.2.1",
+    "eslint-plugin-react": "^7.6.0"
+  }
+}
