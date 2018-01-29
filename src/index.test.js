@@ -6,5 +6,5 @@ import Hello from './'
 configure({ adapter: new Adapter() })
 
 test('it works', () => {
-  expect(render(<Hello />).text()).toEqual('Hello react')
+  expect(render(<Hello />).text()).toEqual('Wait for my react multipane component~')
 })
